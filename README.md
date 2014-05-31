@@ -3,7 +3,9 @@ Alarm
 
 A cli alarm clock that uses beeps 
 
-
+## Requirements
+beep  (apt-get install beep)  
+  
 ## Time Arguments 
 --hours: Set the number of hours until alarm goes off  
 --minutes: Set the number of minutes until the alarm goes off  
