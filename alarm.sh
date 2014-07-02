@@ -61,8 +61,5 @@ do
 done
 
 alarmseconds=$(echo "($minutes*60) + ($hours*60*60) + $seconds" | bc)
-while [ "$SECONDS" -lt "$alarmseconds" ]
-do
-    sleep 5
-done
+sleep $alarmseconds
 beep -r $beeps -l $length -f $frequency
